@@ -1,0 +1,135 @@
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .mainLinks {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .hamburger-menu {
+        @include hamburger-menu;
+    }
+
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+        content: "";
+        @include hamburger-menu-line;
+    }
+
+    .hamburger-menu input {
+        @include hamburger-menu-input;
+    }
+
+    .linksTags {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-container {
+        @include navbar-container;
+    }
+
+    .hamburger-menu:has(input:checked)+.navbar-container {
+        @include hamburger-menu-checked;
+    }
+
+    .tags {
+        @include links-items-tags;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .container {
+        padding: 50px 100px;
+    }
+    .mainLinks {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .hamburger-menu {
+        @include hamburger-menu;
+        right: 100px;
+    }
+
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+        content: "";
+        @include hamburger-menu-line;
+    }
+
+    .hamburger-menu input {
+        @include hamburger-menu-input;
+    }
+
+    .linksTags {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-container {
+        @include navbar-container;
+    }
+
+    .hamburger-menu:has(input:checked)+.navbar-container {
+        @include hamburger-menu-checked;
+    }
+
+    .tags {
+        @include links-items-tags;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 50px 50px;
+    }
+    .mainLinks {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .hamburger-menu {
+        @include hamburger-menu;
+        right: 50px;
+        top: 45px;
+    }
+
+    .hamburger-menu::before,
+    .hamburger-menu::after,
+    .hamburger-menu input {
+        content: "";
+        @include hamburger-menu-line;
+    }
+
+    .hamburger-menu input {
+        @include hamburger-menu-input;
+    }
+
+    .linksTags {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-container {
+        @include navbar-container;
+    }
+
+    .hamburger-menu:has(input:checked)+.navbar-container {
+        @include hamburger-menu-checked;
+    }
+
+    .tags {
+        @include links-items-tags;
+    }
+}

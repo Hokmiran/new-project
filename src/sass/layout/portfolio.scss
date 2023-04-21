@@ -2,12 +2,16 @@
     padding: 50px 150px;
 }
 
-.navbar {
-    @include flex;
+.hamburger-menu {
+    display: none;
 }
 
-.mainLinks {
-    width: 40%;
+.navbar-container {
+    display: none;
+}
+
+.navbar {
+    @include flex;
 }
 
 .logo {
@@ -18,15 +22,31 @@
     @include flex;
 }
 
+.linksItems {
+    margin: 0 10px;
+}
 
 .linksItemsTags {
-    color: $links-items-color;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 18px;
-    line-height: 23px;
+    @include links-items-tags
 }
 
 .linksItemsTags:focus {
     font-weight: 700;
+}
+
+.health {
+    @include flex;
+}
+
+.healthCare {
+    width: 40%;
+}
+
+.healthImage {
+    width: 60%;
+}
+
+svg {
+    width: 100%;
+    object-fit: cover;
 }

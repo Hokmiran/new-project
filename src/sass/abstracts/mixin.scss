@@ -3,3 +3,58 @@
     justify-content: space-between;
     align-items: center;
 }
+
+@mixin hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    background-color: #1abc9c;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    position: absolute;
+    top: 40px;
+    right: 150px;
+}
+
+@mixin hamburger-menu-line {
+    margin: 4px;
+    width: 15px;
+    height: 2.5px;
+    background-color: #fff;
+}
+
+@mixin hamburger-menu-input {
+    appearance: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    pointer-events: none;
+}
+
+@mixin navbar-container {
+    padding: 20px 0;
+    opacity: 0;
+    max-width: 100%;
+    transition: transform 300ms ease-in-out;
+    transform: translateY(0%);
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+@mixin hamburger-menu-checked {
+    transform: translateY(0);
+    opacity: 1;
+}
+@mixin links-items-tags {
+    color: $links-items-color;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+    margin: 20px 0;
+}
