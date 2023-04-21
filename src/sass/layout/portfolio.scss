@@ -1,0 +1,32 @@
+.container {
+    padding: 50px 150px;
+}
+
+.navbar {
+    @include flex;
+}
+
+.mainLinks {
+    width: 40%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.links {
+    @include flex;
+}
+
+
+.linksItemsTags {
+    color: $links-items-color;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.linksItemsTags:focus {
+    font-weight: 700;
+}

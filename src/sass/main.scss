@@ -1,0 +1,42 @@
+@import "./abstracts/variables.scss";
+@import "./abstracts/mixin.scss";
+@import "./base/reset.scss";
+@import "./layout/portfolio.scss";
+@import "./layout/mobile.scss";
+
+
+@font-face {
+    font-family: 'Mulish-Light';
+    src: url(../fonts/static/Mulish-Light.ttf) format("woff2");
+}
+
+@font-face {
+    font-family: 'Mulish-Medium';
+    src: url(../fonts/static/Mulish-Medium.ttf) format("woff2");
+}
+
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url(../fonts/static/Mulish-Regular.ttf) format("woff2");
+}
+
+@font-face {
+    font-family: 'Mulish-Bold';
+    src: url(../fonts/static/Mulish-Bold.ttf) format("woff2");
+}
+
+.mulish-light {
+    font-family: "Mulish-Light", sans-serif;
+}
+
+.mulish-medium {
+    font-family: "Mulish-Medium", sans-serif;
+}
+
+.mulish-regular {
+    font-family: "Mulish-Regular", sans-serif;
+}
+
+.mulish-bold {
+    font-family: "Mulish-Bold", sans-serif;
+}
