@@ -130,6 +130,7 @@ body {
 
 .card {
     @include card;
+
     &-section {
         padding: 0px 30px;
         margin-top: 25px;
@@ -141,12 +142,12 @@ body {
 }
 
 .card-health {
-    @include card;
+    @extend .card;
     height: 450px;
+
     &-section-health_image {
         height: 200px;
-        border: none;
-        
+
         img {
             height: 100%;
             width: 100%;
@@ -154,9 +155,11 @@ body {
             border-top-left-radius: 20px;
         }
     }
+
     &-section-health {
         padding: 0px 30px;
         margin-top: 25px;
+
         h3 {
             line-height: 32px;
         }
@@ -178,4 +181,79 @@ body {
 
 .buttonDownlaodMore {
     @include flex-center;
+}
+
+.review {
+    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+    border-radius: 24px;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.reviewPart {
+    @include flex;
+    padding: 0 100px;
+    margin-bottom: 100px
+}
+
+.serviceHeader-review {
+    @extend .serviceHeader;
+    color: #fff
+}
+
+.line-review {
+    @extend .line;
+    background-color: #fff;
+}
+
+.avatar {
+    @include flex;
+    justify-content: flex-start;
+    gap: 30px;
+    width: 50%;
+
+    &-image {
+        width: 200px;
+        height: 200px;
+        border: 5px solid #fff;
+        border-radius: 50%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 50%;
+        }
+    }
+
+    &-text {
+        h3 {
+            @include paragraph-text;
+            line-height: 48px;
+            font-size: 22px;
+            font-weight: 700;
+            color: #FFFFFF;
+        }
+
+        .avatarText {
+            @include paragraph-text;
+            line-height: 48px;
+            font-size: 18px;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.85);
+
+        }
+    }
+}
+
+.reviewText {
+    width: 50%;
+
+    p {
+        @include paragraph-text;
+        @extend .avatarText;
+        font-size: 19px;
+        line-height: 30px;
+        color: rgba(255, 255, 255, 0.9);
+    }
 }

@@ -163,7 +163,7 @@ body {
   gap: 30px;
 }
 
-.serviceHeader {
+.serviceHeader, .serviceHeader-review {
   font-style: normal;
   mix-blend-mode: normal;
   font-weight: 700;
@@ -172,7 +172,7 @@ body {
   font-size: 36px;
 }
 
-.line {
+.line, .line-review {
   width: 56px;
   height: 2px;
   background: #000000;
@@ -205,7 +205,7 @@ body {
   gap: 10px;
 }
 
-.card {
+.card, .card-health {
   margin-bottom: 10px;
   width: 32%;
   height: 354px;
@@ -222,17 +222,10 @@ body {
 }
 
 .card-health {
-  margin-bottom: 10px;
-  width: 32%;
-  height: 354px;
-  background: #FFFFFF;
-  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
-  border-radius: 20px;
   height: 450px;
 }
 .card-health-section-health_image {
   height: 200px;
-  border: none;
 }
 .card-health-section-health_image img {
   height: 100%;
@@ -272,6 +265,89 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.review {
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  border-radius: 24px;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.reviewPart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  margin-bottom: 100px;
+}
+
+.serviceHeader-review {
+  color: #fff;
+}
+
+.line-review {
+  background-color: #fff;
+}
+
+.avatar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  width: 50%;
+}
+.avatar-image {
+  width: 200px;
+  height: 200px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+.avatar-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+.avatar-text h3 {
+  font-style: normal;
+  mix-blend-mode: normal;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7D7987;
+  mix-blend-mode: normal;
+  line-height: 48px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.avatar-text .avatarText, .avatar-text .reviewText p, .reviewText .avatar-text p {
+  font-style: normal;
+  mix-blend-mode: normal;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7D7987;
+  mix-blend-mode: normal;
+  line-height: 48px;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.reviewText {
+  width: 50%;
+}
+.reviewText p {
+  font-style: normal;
+  mix-blend-mode: normal;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7D7987;
+  mix-blend-mode: normal;
+  font-size: 19px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
