@@ -4,6 +4,50 @@
     align-items: center;
 }
 
+@mixin flex-flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin virtual {
+    font-style: normal;
+    mix-blend-mode: normal;
+}
+
+@mixin button-division {
+    background-color: $button-background;
+    border-radius: 55px;
+    border: none;
+    width: 150px;
+    height: 50px;
+    margin-top: 25px;
+}
+
+@mixin button {
+    border: none;
+    color: #fff;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 60px;
+    mix-blend-mode: normal;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 @mixin hamburger-menu {
     display: flex;
     flex-direction: column;
@@ -37,19 +81,16 @@
 
 @mixin navbar-container {
     padding: 20px 0;
-    opacity: 0;
     max-width: 100%;
     transition: transform 300ms ease-in-out;
-    transform: translateY(0%);
-    display: block;
     position: relative;
     z-index: 1;
 }
 
 @mixin hamburger-menu-checked {
-    transform: translateY(0);
-    opacity: 1;
+    display: block;
 }
+
 @mixin links-items-tags {
     color: $links-items-color;
     text-decoration: none;
@@ -57,4 +98,44 @@
     font-size: 18px;
     line-height: 23px;
     margin: 20px 0;
+}
+
+@mixin health-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@mixin button-donwload {
+    background-color: #fff;
+    border: 1px solid $button-background;
+    color: $button-background;
+}
+@mixin headers {
+    font-weight: 700;
+    line-height: 56px;
+    color: $text-color;
+}
+
+@mixin line {
+    width: 56px;
+    height: 2px;
+    background: #000000;
+    border-radius: 5px;
+}
+
+@mixin paragraph-text {
+    @include virtual;
+    font-weight: 300;
+    line-height: 30px;
+    color: $paragraph-color;
+    mix-blend-mode: normal;
+}
+
+@mixin card {
+    margin-bottom: 10px;
+    width: 32%;
+    padding: 10px 0;
+    background: #FFFFFF;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+    border-radius: 20px;
 }

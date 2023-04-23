@@ -117,8 +117,7 @@
     }
 
     .linksTags {
-        display: flex;
-        flex-direction: column;
+       @include flex-column;
     }
 
     .navbar-container {

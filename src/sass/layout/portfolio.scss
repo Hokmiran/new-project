@@ -1,3 +1,7 @@
+body {
+    background: #E5E5E5;
+}
+
 .container {
     padding: 50px 150px;
 }
@@ -35,18 +39,98 @@
 }
 
 .health {
-    @include flex;
+    @include flex-flex;
+    margin-top: 50px;
 }
 
 .healthCare {
+    margin-top: 100px;
     width: 40%;
 }
 
 .healthImage {
-    width: 60%;
+    width: 55%;
 }
 
-svg {
+.healthImg {
+    @include health-img
+}
+
+.virtualTextPart {
+    margin-top: 25px;
+}
+
+.virtualText {
+    @include paragraph-text;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.virtual {
+    @include virtual;
+    @include headers;
+    font-size: 48px;
+}
+
+.buttonConsult {
+    @include flex-center;
+    @include button-division
+}
+
+.buttonDownlaod {
+    @include flex-center;
+    @include button-division;
+    @include button-donwload
+}
+
+.button {
+    @include button
+}
+
+.button-download {
+    @include button;
+    color: $button-background;
+}
+
+.service {
+    @include flex-center;
+    @include flex-column;
+    margin-top: 100px;
+    gap: 30px;
+}
+
+.serviceHeader {
+    @include virtual;
+    @include headers;
+    font-size: 36px;
+}
+
+.line {
+    @include line;
+}
+
+.serviceTextPart {
+    @include paragraph-text;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bg-img {
+    background-image: url('../../src/assets/vector.png');
+    position: relative;
+    z-index: 3;
+    background-repeat: no-repeat;
+    // background-size: cover;
+    height: 100vh;
+}
+
+.blogs {
+    @include flex;
     width: 100%;
-    object-fit: cover;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.card {
+    @include card;
 }
