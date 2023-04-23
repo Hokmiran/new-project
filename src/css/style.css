@@ -193,9 +193,7 @@ body {
 .bg-img {
   background-image: url("../../src/assets/vector.png");
   position: relative;
-  z-index: 3;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .blogs {
@@ -210,10 +208,43 @@ body {
 .card {
   margin-bottom: 10px;
   width: 32%;
-  padding: 10px 0;
+  height: 354px;
   background: #FFFFFF;
   box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
   border-radius: 20px;
+}
+.card-section {
+  padding: 0px 30px;
+  margin-top: 25px;
+}
+.card-section img {
+  height: 90px;
+}
+
+.searchDoctor {
+  font-style: normal;
+  mix-blend-mode: normal;
+  font-weight: 700;
+  line-height: 56px;
+  color: #000000;
+  font-size: 24px;
+}
+
+.searchParag {
+  font-style: normal;
+  mix-blend-mode: normal;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7D7987;
+  mix-blend-mode: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.buttonDownlaodMore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
