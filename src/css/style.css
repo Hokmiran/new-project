@@ -221,6 +221,33 @@ body {
   height: 90px;
 }
 
+.card-health {
+  margin-bottom: 10px;
+  width: 32%;
+  height: 354px;
+  background: #FFFFFF;
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+  border-radius: 20px;
+  height: 450px;
+}
+.card-health-section-health_image {
+  height: 200px;
+  border: none;
+}
+.card-health-section-health_image img {
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.card-health-section-health {
+  padding: 0px 30px;
+  margin-top: 25px;
+}
+.card-health-section-health h3 {
+  line-height: 32px;
+}
+
 .searchDoctor {
   font-style: normal;
   mix-blend-mode: normal;

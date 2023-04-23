@@ -135,7 +135,30 @@ body {
         margin-top: 25px;
 
         img {
-            height: 90px
+            height: 90px;
+        }
+    }
+}
+
+.card-health {
+    @include card;
+    height: 450px;
+    &-section-health_image {
+        height: 200px;
+        border: none;
+        
+        img {
+            height: 100%;
+            width: 100%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+    }
+    &-section-health {
+        padding: 0px 30px;
+        margin-top: 25px;
+        h3 {
+            line-height: 32px;
         }
     }
 }
