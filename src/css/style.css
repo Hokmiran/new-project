@@ -350,6 +350,40 @@ body {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.footer {
+  width: 100%;
+  padding: 10px 0;
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+.footerComponent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+}
+.list-footer_items {
+  margin: 15px 0;
+  font-style: normal;
+  mix-blend-mode: normal;
+  font-weight: 300;
+  line-height: 30px;
+  color: #7D7987;
+  mix-blend-mode: normal;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+}
+.list-footer_items h3 {
+  font-size: 20px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .mainLinks {
     display: none;
