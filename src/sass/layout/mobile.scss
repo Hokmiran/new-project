@@ -1,4 +1,27 @@
+@media screen and (min-width: 992px) and (max-width: 1350px) {
+    .healthImage {
+        margin-top: 50px;
+    }
+
+    .card {
+        &-section {
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+    .searchDoctor {
+        font-size: 20px;
+        line-height: 36px;
+    }
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
+    .container {
+        padding: 50px 100px;
+    }
+
     .mainLinks {
         display: none;
     }
@@ -39,12 +62,102 @@
         @include links-items-tags;
     }
 
+    .health {
+        @include flex-column;
+        justify-content: center;
+
+        .virtual {
+            text-align: center;
+        }
+
+        .virtualText {
+            text-align: center;
+        }
+    }
+
+    .healthCare {
+        width: 100%;
+        @include flex-column;
+    }
+
+    .healthImage {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .card {
+        @include card;
+        width: 48%;
+
+        &-section {
+            padding: 0px 30px;
+            margin-top: 25px;
+
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+    .searchDoctor {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .reviewPart {
+        @include flex-column;
+
+        .avatar {
+            @include flex-column;
+            margin-top: 20px;
+
+            .avatar-text {
+                h3 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .reviewText {
+            width: 100%;
+
+            P {
+                text-align: center;
+            }
+        }
+    }
+
+    .card-health {
+        width: 48%;
+        height: 480px;
+
+        &-section-health_image {
+            height: 150px;
+        }
+
+        &-section-health {
+
+            h3 {
+                line-height: 26px;
+            }
+        }
+    }
+
+    .footerComponent {
+        @include flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
     .container {
         padding: 50px 100px;
     }
+
     .mainLinks {
         display: none;
     }
@@ -55,7 +168,6 @@
 
     .hamburger-menu {
         @include hamburger-menu;
-        right: 100px;
     }
 
     .hamburger-menu::before,
@@ -84,6 +196,104 @@
 
     .tags {
         @include links-items-tags;
+    }
+
+    .health {
+        @include flex-column;
+        justify-content: center;
+
+        .virtual {
+            text-align: center;
+        }
+
+        .virtualText {
+            text-align: center;
+        }
+    }
+
+    .healthCare {
+        width: 100%;
+        @include flex-column;
+    }
+
+    .healthImage {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .card {
+        @include card;
+        width: 48%;
+
+        &-section {
+            padding: 0px 30px;
+            margin-top: 25px;
+
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+    .searchDoctor {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .reviewPart {
+        @include flex-column;
+
+        .avatar {
+            @include flex-column;
+            margin-top: 20px;
+
+            .avatar-text {
+                h3 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .reviewText {
+            width: 100%;
+
+            P {
+                text-align: center;
+            }
+        }
+    }
+
+    .card-health {
+        width: 48%;
+        height: 450px;
+
+        &-section-health_image {
+            height: 150px;
+        }
+
+        &-section-health {
+
+            h3 {
+                line-height: 20px;
+                font-size: 18px
+            }
+        }
+    }
+
+    .footerComponent {
+        @include flex;
+        flex-wrap: wrap;
+    }
+
+    .service {
+        h2 {
+            text-align: center;
+            font-size: 24px;
+        }
     }
 }
 
@@ -91,6 +301,7 @@
     .container {
         padding: 50px 50px;
     }
+
     .mainLinks {
         display: none;
     }
@@ -117,7 +328,7 @@
     }
 
     .linksTags {
-       @include flex-column;
+        @include flex-column;
     }
 
     .navbar-container {
@@ -130,5 +341,103 @@
 
     .tags {
         @include links-items-tags;
+    }
+
+    .health {
+        @include flex-column;
+        justify-content: center;
+
+        .virtual {
+            text-align: center;
+        }
+
+        .virtualText {
+            text-align: center;
+        }
+    }
+
+    .healthCare {
+        width: 100%;
+        @include flex-column;
+    }
+
+    .healthImage {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .card {
+        @include card;
+        width: 100%;
+
+        &-section {
+            padding: 0px 30px;
+            margin-top: 25px;
+
+            img {
+                height: 50px;
+            }
+        }
+    }
+
+    .searchDoctor {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .service {
+        h2 {
+            text-align: center;
+            font-size: 22px;
+        }
+    }
+
+    .reviewPart {
+        @include flex-column;
+        padding: 0 20px;
+
+        .avatar {
+            @include flex-column;
+            margin-top: 20px;
+
+            .avatar-text {
+                h3 {
+                    text-align: center;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .reviewText {
+            width: 100%;
+
+            P {
+                text-align: center;
+            }
+        }
+    }
+
+    .card-health {
+        width: 100%;
+        height: 480px;
+
+        &-section-health_image {
+            height: 150px;
+        }
+
+        &-section-health {
+
+            h3 {
+                line-height: 26px;
+            }
+        }
+    }
+
+    .footerComponent {
+        @include flex;
+        flex-wrap: wrap;
     }
 }

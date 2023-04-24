@@ -1,7 +1,3 @@
-body {
-    background: #E5E5E5;
-}
-
 .container {
     padding: 50px 150px;
 }
@@ -37,11 +33,13 @@ body {
 .linksItemsTags:focus {
     font-weight: 700;
 }
+
 .bg-img-element {
     @include bg-img;
     background-image: url("../../src/assets/element.png");
     left: 0
 }
+
 .health {
     @include flex-flex;
     margin-top: 0px;
@@ -133,6 +131,7 @@ body {
 
 .card {
     @include card;
+    width: 32%;
 
     &-section {
         padding: 0px 30px;
@@ -182,8 +181,21 @@ body {
     line-height: 28px;
 }
 
+.searchParagTag {
+    @include paragraph-text;
+    @extend .searchParag;
+    color: $button-background;
+    cursor: pointer;
+}
+
 .buttonDownlaodMore {
     @include flex-center;
+}
+
+.line-middle {
+    @include line;
+    height: 2px;
+    margin-top: 30px;
 }
 
 .review {
@@ -274,6 +286,11 @@ body {
     @include flex-center;
     justify-content: flex-end;
 
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
     &-footer {
         &_items {
             margin: 15px 0;
@@ -281,7 +298,8 @@ body {
             font-size: 18px;
             color: #fff;
             cursor: pointer;
-            h3{ 
+
+            h3 {
                 font-size: 20px;
             }
         }
