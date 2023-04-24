@@ -37,10 +37,14 @@ body {
 .linksItemsTags:focus {
     font-weight: 700;
 }
-
+.bg-img-element {
+    @include bg-img;
+    background-image: url("../../src/assets/element.png");
+    left: 0
+}
 .health {
     @include flex-flex;
-    margin-top: 50px;
+    margin-top: 0px;
 }
 
 .healthCare {
@@ -117,8 +121,7 @@ body {
 
 .bg-img {
     background-image: url('../../src/assets/vector.png');
-    position: relative;
-    background-repeat: no-repeat;
+    @include bg-img;
 }
 
 .blogs {

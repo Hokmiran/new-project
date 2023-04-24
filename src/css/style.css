@@ -54,10 +54,17 @@ body {
   font-weight: 700;
 }
 
+.bg-img-element {
+  position: relative;
+  background-repeat: no-repeat;
+  background-image: url("../../src/assets/element.png");
+  left: 0;
+}
+
 .health {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 .healthCare {
